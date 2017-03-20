@@ -51,7 +51,6 @@ F
     </parent>
 
     <artifactId>devops</artifactId>
-	<version>1.4</version>
     <packaging>war</packaging>
     <name>devops</name>
 
