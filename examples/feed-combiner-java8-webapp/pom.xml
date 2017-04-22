@@ -159,12 +159,7 @@
       </configuration>
     </execution>
   </executions>
-  <configuration>
-    <format>{0,date,yyDHHmm}</format>
-    <items>
-      <item>timestamp</item>
-    </items>
-  </configuration>
+ 
   <groupId>com.atlassian.maven.plugins</groupId>
   <artifactId>clover-maven-plugin</artifactId>
     <version>4.1.2</version>			
