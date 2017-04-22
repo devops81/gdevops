@@ -67,12 +67,12 @@ public class Login_Test {
 	}
 	@BeforeMethod
 	public void beforeMethod() {
-		File file = new File("C:/Driver/IEDriverServer.exe");
+		File file = new File("/home/ec2-user/ChromeDriver/chromedriver");
 		System.setProperty("webdriver.ie.driver", file.getAbsolutePath());
 		driver = new InternetExplorerDriver();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
-		driver.get("file:///C:/JenkinSlave/workspace/Banking Scorecard Build_Dev/examples/feed-combiner-java8-webapp/src/main/webapp/index.html");
+		driver.get("/home/ec2-user/bhome/xml-data/build-dir/GIT-GIT-JOB1/examples/feed-combiner-java8-webapp/src/main/webapp/index.html");
 	}
 
 	@AfterMethod
