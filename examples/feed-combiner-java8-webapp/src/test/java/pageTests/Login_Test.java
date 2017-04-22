@@ -68,7 +68,7 @@ public class Login_Test {
 	@BeforeMethod
 	public void beforeMethod() {
 		File file = new File("/home/ec2-user/ChromeDriver/chromedriver");
-		System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
+		System.setProperty("webdriver.chrome.driver","/home/ec2-user/ChromeDriver/chromedriver");
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
