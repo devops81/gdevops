@@ -58,6 +58,13 @@ public class Login_Test {
 		Thread.sleep(2000);
 		assertTrue(Login_Page.des_ContactUs(driver).isDisplayed());
 	}
+	
+	@Test
+	public void Validate_IfEmailExists() throws InterruptedException {
+		Login_Page.field_Email(driver).click();
+		Thread.sleep(2000);
+		assertTrue(Login_Page.des_ContactUs(driver).isDisplayed());
+	}
 
 	@Test
 	public void Validate_IfNewsletterLinkisEnabled() throws InterruptedException {
