@@ -34,6 +34,13 @@ public class Login_Page {
 
 		return element;
 	}
+	
+	public static WebElement field_Email(WebDriver driver) {
+
+		element = driver.findElement(By.xpath("//input[@id='email']"));
+
+		return element;
+	}
 
 	public static WebElement hlink_GenpactLogo(WebDriver driver) {
 
