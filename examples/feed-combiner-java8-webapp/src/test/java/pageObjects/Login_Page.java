@@ -37,7 +37,7 @@ public class Login_Page {
 	
 	public static WebElement field_Email(WebDriver driver) {
 
-		element = driver.findElement(By.xpath("//input[@id='email']"));
+		element = driver.findElement(By.xpath("//input[@id='name']"));
 
 		return element;
 	}
