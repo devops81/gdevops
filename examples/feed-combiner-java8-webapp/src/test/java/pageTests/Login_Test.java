@@ -63,7 +63,7 @@ public class Login_Test {
 	public void Validate_IfEmailExists() throws InterruptedException {
 		//Login_Page.field_Email(driver).click();
 		Thread.sleep(2000);
-		assertTrue(Login_Page.field_Email(driver).isDisplayed());
+		assertTrue(!Login_Page.field_Email(driver).isDisplayed());
 	}
 
 	@Test
