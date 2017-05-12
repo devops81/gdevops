@@ -93,11 +93,8 @@ Thread.sleep(10000);
 	@BeforeMethod
 	public void beforeMethod() {
 		File file = new File("C:/Driver/IEDriverServer.exe");
-		//File file = new File("C:/Driver/chromedriver.exe");
-		
 		System.setProperty("webdriver.ie.driver", file.getAbsolutePath());
-		//System.setProperty("webdriver.chrome.driver", "C:/Driver/chromedriver.exe");
-		driver = new InternetExplorerDriver();
+	        driver = new InternetExplorerDriver();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		driver.get("file:///C:/JenkinSlave/workspace/Banking Scorecard Build_Dev/examples/feed-combiner-java8-webapp/src/main/webapp/index.html");
