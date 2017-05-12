@@ -95,7 +95,7 @@ Thread.sleep(10000);
 		File file = new File("C:/Driver/chromedriver.exe");
 		
 		//System.setProperty("webdriver.ie.driver", file.getAbsolutePath());
-		System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
+		System.setProperty("webdriver.chrome.driver", "C:/Driver/chromedriver.exe");
 		driver = new InternetExplorerDriver();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
