@@ -83,7 +83,7 @@ Thread.sleep(10000);
 		assertTrue(!Login_Page.field_Email(driver).isDisplayed());
 	}
 
-	@Test
+	//@Test
 	public void Validate_IfNewsletterLinkisEnabled() throws InterruptedException {
 		Login_Page.hlink_NewsletterSuscription(driver).click();
 		Thread.sleep(2000);
