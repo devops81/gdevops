@@ -44,6 +44,23 @@ public class Login_Test {
 	public void Validate_IfLogoIsDisplayedorNot() throws InterruptedException {
 		assertTrue(Login_Page.hlink_GenpactLogo(driver).isDisplayed());
 	}
+	
+	@Test
+	public void verifySubscriberNewsletter() throws InterruptedException {
+
+driver.findElement(By.linkText("Subsribe to newsletter")).click();
+
+driver.findElement(By.xpath("//input[@id='name']")).sendKeys("Pradeep Chand Nailwal");
+
+driver.findElement(By.xpath("//input[@id='email'][1]")).sendKeys("Pradeep.Nailwal@genpact.com");
+
+driver.findElement(By.xpath("//textarea[@id='message']")).sendKeys("Need help on DevOps");
+
+driver.findElement(By.xpath("//input[@id='submit']")).click();
+
+Thread.sleep(10000);
+
+}
 
 	@Test
 	public void Validate_IfAboutLinkIsEnable() throws InterruptedException {
