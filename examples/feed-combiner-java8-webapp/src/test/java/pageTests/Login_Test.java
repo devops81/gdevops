@@ -50,7 +50,7 @@ public class Login_Test {
 
 //driver.findElement(By.linkText("Demo-github-Proj")).click();
 Thread.sleep(10000);
-driver.findElement(By.xpath("//a[@id='newsletter']")).click();
+driver.findElement(By.xpath("//a[@id='newsID']")).click();
 Thread.sleep(1000);
 driver.findElement(By.xpath("//input[@id='name']")).sendKeys("Pradeep Chand Nailwal");
 Thread.sleep(1000);
