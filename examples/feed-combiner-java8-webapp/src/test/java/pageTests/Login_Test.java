@@ -49,6 +49,7 @@ public class Login_Test {
 	public void verifySubscriberNewsletter() throws InterruptedException {
 
 //driver.findElement(By.linkText("Demo-github-Proj")).click();
+Thread.sleep(10000);
 driver.findElement(By.xpath("//a[@id='newsletter']")).click();
 Thread.sleep(1000);
 driver.findElement(By.xpath("//input[@id='name']")).sendKeys("Pradeep Chand Nailwal");
