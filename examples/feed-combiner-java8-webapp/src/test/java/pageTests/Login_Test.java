@@ -47,12 +47,12 @@ public class Login_Test {
 	
 	@Test
 	public void verifySubscriberNewsletter() throws InterruptedException {
-Thread.sleep(30000);
+
 //driver.findElement(By.linkText("Demo-github-Proj")).click();
 driver.findElement(By.xpath("//a[@id='newsletter']")).click();
-
+Thread.sleep(1000);
 driver.findElement(By.xpath("//input[@id='name']")).sendKeys("Pradeep Chand Nailwal");
-
+Thread.sleep(1000);
 driver.findElement(By.xpath("//input[@id='email'][1]")).sendKeys("Pradeep.Nailwal@genpact.com");
 
 driver.findElement(By.xpath("//textarea[@id='message']")).sendKeys("Need help on DevOps");
